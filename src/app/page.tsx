@@ -1,9 +1,5 @@
+import { QuoraLoginPage } from "@/components/sites/id-quora-com-ac6fde2d/root-8a5edab2/QuoraLoginPage";
+
 export default function Home() {
-  return (
-    <main className="flex min-h-screen items-center justify-center">
-      <p className="text-muted-foreground">
-        Clone target not yet built. Run <code className="font-mono text-foreground">/clone-website</code> to start.
-      </p>
-    </main>
-  );
+  return <QuoraLoginPage />;
 }

@@ -128,3 +128,177 @@
     @apply font-sans;
   }
 }
+
+/* Quora Login Page Styles */
+.quora-body {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 24px;
+}
+
+.quora-left {
+  width: 50%;
+  padding: 0 24px;
+  border-right: 1px solid rgb(57, 56, 57);
+}
+
+.quora-right {
+  width: 50%;
+  padding: 0 24px;
+}
+
+.quora-link {
+  color: rgb(72, 148, 253);
+  text-decoration: none;
+  cursor: pointer;
+}
+.quora-link:hover {
+  text-decoration: underline;
+}
+
+.quora-link-subtle {
+  color: rgb(230, 231, 232);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 13px;
+}
+.quora-link-subtle:hover {
+  text-decoration: underline;
+}
+
+.quora-social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 46px;
+  padding: 0 16px;
+  border: 1px solid rgb(57, 56, 57);
+  border-radius: 1000px;
+  background: transparent;
+  color: rgb(213, 214, 214);
+  cursor: pointer;
+  font-size: 15px;
+  font-family: inherit;
+  transition: background-color 0.18s ease-in-out;
+}
+.quora-social-btn:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.quora-signup-email-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+  margin-top: 8px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 1000px;
+  background: transparent;
+  color: rgb(213, 214, 214);
+  cursor: pointer;
+  font-size: 13px;
+  font-family: inherit;
+  transition: background-color 0.18s ease-in-out;
+}
+.quora-signup-email-btn:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.quora-input-wrapper {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  min-height: 45px;
+  padding: 8px;
+  border: 1px solid rgb(57, 56, 57);
+  border-radius: 3px;
+  background-color: rgb(24, 24, 24);
+  position: relative;
+  transition: border-color 0.18s ease-in-out;
+}
+.quora-input-wrapper:focus-within {
+  border-color: rgb(40, 125, 255);
+}
+
+.quora-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+  line-height: 21px;
+  font-family: inherit;
+}
+.quora-input::placeholder {
+  color: rgb(130, 130, 130);
+}
+
+.quora-login-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 1000px;
+  background-color: rgb(40, 125, 255);
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.18s ease-in-out, background-color 0.18s ease-in-out;
+}
+.quora-login-btn:hover:not(:disabled) {
+  background-color: rgb(30, 110, 230);
+}
+.quora-login-btn:disabled {
+  cursor: default;
+}
+
+.quora-footer-link {
+  color: rgb(230, 231, 232);
+  text-decoration: none;
+  cursor: pointer;
+}
+.quora-footer-link:hover {
+  text-decoration: underline;
+}
+
+/* ponytail: no mobile breakpoint — original Quora /login has no responsive layout,
+   card stays 700px and overflows on small viewports. Add breakpoint if custom mobile UX needed. */
+
+/* Mobile/Desktop visibility */
+.quora-mobile {
+  display: none;
+}
+
+.quora-mobile-action-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding: 0 15px;
+  border: none;
+  border-radius: 1000px;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.18s ease-in-out;
+}
+.quora-mobile-action-btn:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+@media (max-width: 700px) {
+  .quora-desktop {
+    display: none;
+  }
+  .quora-mobile {
+    display: block;
+  }
+}

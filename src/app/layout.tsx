@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Website Clone",
-  description: "Pixel-perfect website clone",
+  title: "Quora - Tempat berbagi pengetahuan dan memahami dunia lebih baik",
+  description: "Tempat berbagi pengetahuan dan memahami dunia lebih baik",
 };
 
 export default function RootLayout({
@@ -27,7 +27,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col" style={{ margin: 0 }}>{children}</body>
     </html>
   );
 }
